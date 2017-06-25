@@ -32,7 +32,7 @@ var sendWelcomeMessage = (newEmail) => {
   });
 };
 
-var subscribeEmail = () => {
+var subscribeEmail = (newEmail, firstName, lastName) => {
   request({
     method: 'POST',
     url: `https://us16.api.mailchimp.com/3.0/lists/${process.env.LIST_ID}/members/`,
@@ -43,11 +43,11 @@ var subscribeEmail = () => {
     },
     json: true,
     body: {
-      "email_address": process.env.TEST_EMAIL,
+      "email_address": newEmail,
       "status": "subscribed",
       "merge_fields": {
-        "FNAME": "Not",
-        "LNAME": "Real"
+        "FNAME": firstName,
+        "LNAME": lastName
       }
     }
   }, (error, response, body) => {
