@@ -8,8 +8,12 @@ function addEmail(e) {
   e.preventDefault();
 
   var newEmail = $('#email').val();
+  var firstName = $('#fName').val();
+  var lastName = $('#lName').val();
   var mailOptions = {
-    email: newEmail
+    email: newEmail,
+    fName: firstName,
+    lName: lastName
   }
   console.log(newEmail);
 
@@ -24,4 +28,7 @@ function addEmail(e) {
     },
     url: "http://localhost:3000/submitemail"
   });
+
+  var form = document.getElementById("emailForm");
+  form.reset();
 }
