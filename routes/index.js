@@ -17,6 +17,7 @@ router.get('/', function(req, res, next) {
 router.post('/submitemail', (req, res)=> {
   console.log(req.body.email);
   email.sendWelcomeMessage(req.body.email);
+  email.subscribeEmail();
   res.send('Email sent');
 });
 
