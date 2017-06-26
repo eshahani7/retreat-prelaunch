@@ -16,6 +16,7 @@
     "jquery": "^3.2.1",
     "node-env-file": "^0.1.8",
     "nodemailer": "^4.0.1",
+    "nodemailer-express-handlebars": "^2.0.0",
     "path": "^0.12.7",
     "request": "^2.81.0"
   }
