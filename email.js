@@ -1,10 +1,12 @@
 const nodemailer = require('nodemailer');
 const request = require('request');
 const env = require('node-env-file');
+const hbs = require('nodemailer-express-handlebars');
 
 env(__dirname + '/.env');
 
-var sendWelcomeMessage = (newEmail) => {
+//WELCOME EMAIL
+var sendWelcomeMessage = (newEmail, firstName) => {
   var transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com',
       port: 465,
@@ -14,13 +16,28 @@ var sendWelcomeMessage = (newEmail) => {
           pass: process.env.AUTH_PASS
       }
   });
+
+  //options for handelbars plugin
+  var options = {
+    viewEngine: {
+        extname: '.hbs',
+        layoutsDir: 'views/',
+        defaultLayout : 'welcome-template',
+    },
+    viewPath: 'views/',
+    extName: '.hbs'
+};
+
+  transporter.use('compile', hbs(options));
   // setup e-mail data
   var mailOptions = {
       from: '"Retreat" <discoverretreat@gmail.com>', // sender address (who sends)
       to: newEmail, // list of receivers (who receives)
       subject: 'Welcome to Retreat', // Subject line
-      text: 'Thanks for signing up!', // plaintext body
-      html: '<b>Email sent from node.js</b>' // html body
+      template: 'welcome-template',
+      context: {
+        firstname: firstName
+      }
   };
 
   // send mail with defined transport object
@@ -32,6 +49,7 @@ var sendWelcomeMessage = (newEmail) => {
   });
 };
 
+//MAILCHIMP SUBSCRIPTION
 var subscribeEmail = (newEmail, firstName, lastName) => {
   request({
     method: 'POST',
@@ -55,5 +73,6 @@ var subscribeEmail = (newEmail, firstName, lastName) => {
   });
 };
 
+//EXPORT FUNCTIONS
 module.exports.sendWelcomeMessage = sendWelcomeMessage;
 module.exports.subscribeEmail = subscribeEmail;
