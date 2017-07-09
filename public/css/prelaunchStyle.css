@@ -7,7 +7,7 @@ body  {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
+  font-size: 15px;
   color: white;
 }
 
@@ -19,22 +19,35 @@ html{
   padding-top: 10%;
 }
 
-#headerInside{
-  text-align: center;
+h1{
+  font-size: 72px;
+  letter-spacing: 30px;
 }
 
-#headerOutside{
-  text-align: left;
+h3{
+  font-size: 32px;
+}
+
+@media screen and (max-width: 480px){
+  h1{
+    font-size: 60px;
+    letter-spacing: 15px;
+  }
+
+  h3{
+    font-size: 24px;
+  }
 }
 
 #headerCompanyName{
   font-family: Montserrat;
-  font-size: 5em;
+  /*font-size: 72px;*/
   color: white;
 }
 
 #headerSubtext{
   font-family: Open Sans;
+  text-align: center;
   color: white;
 }
 
@@ -42,7 +55,7 @@ html{
   text-align: center;
   position: relative;
 
-  margin-top: 25%;
+  margin-top: 20%;
 }
 
 .typewrite{
@@ -86,11 +99,17 @@ html{
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   background: transparent;
-  padding: 2%;
+  padding: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
   color: white;
   border: 2px solid white;
 
   font-family: Lato;
+}
+
+#arrow{
+  padding-top: 5px;
 }
 
 .navbar-default .navbar-nav>li>a {
