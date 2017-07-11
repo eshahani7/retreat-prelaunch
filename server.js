@@ -8,7 +8,7 @@ var app = express();
 const port = process.env.PORT || 3000;
 
 app.set('view engine', 'hbs');
-app.use(bodyParser.urlencoded({ extended: false }));
+//app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(__dirname + '/public'));
 
 app.use('/', index);

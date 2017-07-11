@@ -13,6 +13,7 @@ const publicPath = path.join(__dirname, '../public/index.html');
 // });
 
 router.use(express.static(publicPath));
+router.use(bodyParser.json());
 
 router.post('/submitemail', (req, res)=> {
   console.log(req.body.email);
