@@ -50,7 +50,7 @@ function addEmail(e) {
       console.log('it worked!');
     },
     //url: "http://localhost:3000/submitemail" *USE WHEN RUNNING LOCALLY*
-    url: "http://mighty-wildwood-97708/submitemail"
+    url: "https://mighty-wildwood-97708/submitemail"
   });
 
   var form = document.getElementById("submitForm");
