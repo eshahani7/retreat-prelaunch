@@ -34,6 +34,27 @@ var sendWelcomeMessage = (newEmail, firstName) => {
       from: '"Retreat" <discoverretreat@gmail.com>', // sender address (who sends)
       to: newEmail, // list of receivers (who receives)
       subject: 'Welcome to Retreat', // Subject line
+      attachments: [{
+        filename: 'beach-resort.png',
+        path: './views/img/beach-resort.png',
+        cid: 'header-img'
+      }, {
+        filename: 'facebook_icon.png',
+        path: './views/img/facebook_icon.png',
+        cid: 'fb-icon'
+      }, {
+        filename: 'twitter_icon.png',
+        path: './views/img/twitter_icon.png',
+        cid: 'twitter-icon'
+      }, {
+        filename: 'insta_icon.png',
+        path: './views/img/insta_icon.png',
+        cid: 'insta-icon'
+      }, {
+        filename: 'Asset 1.png',
+        path: './views/img/Asset 1.png',
+        cid: 'logo'
+      }],
       template: 'welcome-template',
       context: {
         firstname: firstName
