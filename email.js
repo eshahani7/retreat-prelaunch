@@ -1,9 +1,9 @@
 const nodemailer = require('nodemailer');
 const request = require('request');
-const env = require('node-env-file');
+//const env = require('node-env-file');
 const hbs = require('nodemailer-express-handlebars');
 
-env(__dirname + '/.env');
+//env(__dirname + '/.env');
 
 //WELCOME EMAIL
 var sendWelcomeMessage = (newEmail, firstName) => {
