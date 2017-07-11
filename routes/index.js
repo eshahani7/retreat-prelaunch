@@ -20,7 +20,7 @@ router.post('/submitemail', (req, res)=> {
   email.sendWelcomeMessage(req.body.email, req.body.fName);
   email.subscribeEmail(req.body.email, req.body.fName, req.body.lName);
   console.log(req.body.fName);
-  res.send(`Email sent to ${req.body.email}`);
+  res.send(`Email sent to ${req.body.email}, ${req.body.fName}, ${req.body.lName}`);
 });
 
 module.exports = router;
