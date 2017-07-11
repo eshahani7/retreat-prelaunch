@@ -1,7 +1,8 @@
 // DOM Ready =============================================================
 $(document).ready(() => {
   $('#submitBtn').on('click', addEmail);
-  $('a[href^="#"]').on('click',function (e) {
+  $(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
 	    e.preventDefault();
 
 	    var target = this.hash;
@@ -14,21 +15,25 @@ $(document).ready(() => {
 	    });
 	});
 });
+});
 
 // Functions =============================================================
 function addEmail(e) {
   e.preventDefault();
 
-  var newEmail = $('#email').val();
-  var name = $('#name').val();
+  var newEmail = $('#exampleInputEmail').val();
+  var name = $('#exampleInputName').val();
+
+  console.log(newEmail);
+  console.log(name);
 
   var lastName;
-  if(name.include(' ')) {
+  if(name.includes(' ')) {
     lastName = name.substr(name.indexOf(' '));
   } else {
     lastName = '';
   }
-  var firstName = name.substr(0, name.indexOf(' ') -1 );
+  var firstName = name.substr(0, name.indexOf(' '));
 
   var mailOptions = {
     email: newEmail,
@@ -49,6 +54,6 @@ function addEmail(e) {
     url: "http://localhost:3000/submitemail"
   });
 
-  var form = document.getElementById("emailForm");
-  form.reset();
+  /*var form = document.getElementById("emailForm");
+  form.reset();*/
 }
