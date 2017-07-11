@@ -10,9 +10,7 @@ $(document).ready(() => {
 
 	    $('html, body').stop().animate({
 	        'scrollTop': $target.offset().top
-	    }, 900, 'swing', function () {
-	        window.location.hash = target;
-	    });
+	    }, 900, 'swing');
 	});
 });
 });
@@ -54,6 +52,6 @@ function addEmail(e) {
     url: "http://localhost:3000/submitemail"
   });
 
-  /*var form = document.getElementById("emailForm");
-  form.reset();*/
+  var form = document.getElementById("submitForm");
+  form.reset();
 }
