@@ -1,12 +1,4 @@
 body  {
-  width: 100%;
-  max-height: 50%;
-  padding-top: 70px;
-  background-image: url("../img/beachResort.jpg");
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   font-size: 15px;
   color: white;
 }
@@ -15,38 +7,57 @@ html{
   height: 100%;
 }
 
-#headerContent{
-  padding-top: 10%;
+.flippedImg {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }
 
-h1{
-  font-size: 72px;
-  letter-spacing: 30px;
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+a:active {
+  color: white;
+  text-decoration: none;
 }
 
-h3{
-  font-size: 32px;
-}
-
-@media screen and (max-width: 480px){
-  h1{
-    font-size: 60px;
-    letter-spacing: 15px;
-  }
-
-  h3{
-    font-size: 24px;
-  }
+section.header{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 100%;
+  max-height: 50%;
+  background-image: url("../img/beachResort.jpg");
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
 }
 
 #headerCompanyName{
+  font-size: 72px;
+  letter-spacing: 30px;
+  padding-top: 10%;
   font-family: Montserrat;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                0px 8px 13px rgba(0,0,0,0.1),
+                0px 18px 23px rgba(0,0,0,0.1);
   /*font-size: 72px;*/
   color: white;
 }
 
 #headerSubtext{
+  font-size: 32px;
   font-family: Open Sans;
+  font-weight: 300;
   text-align: center;
   color: white;
 }
@@ -58,30 +69,13 @@ h3{
   margin-top: 20%;
 }
 
+#arrow{
+  padding-top: 8px;
+  padding-bottom: 5px;
+}
+
 .typewrite{
   color: white;
-}
-
-.navbar{
-  background: rgba(0,0,0,0);
-  border: rgba(0,0,0,0);
-}
-
-.navbar-brand{
-  height: auto;
-  padding-left: 5%;
-}
-
-.navbar-brand:hover{
-  background: rgba(0, 0, 128, 0.25);
-}
-
-.navbar-default .navbar-toggle .icon-bar{
-  background-color: white;
-}
-
-.navbar-toggle{
-  border: 2px solid transparent;
 }
 
 .round-transparent-button:hover{
@@ -106,19 +100,164 @@ h3{
   border: 2px solid white;
 
   font-family: Lato;
+  /*font-size: 16px;*/
 }
 
-#arrow{
-  padding-top: 5px;
+section.info{
+  width: 100%;
+  max-height: 50%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background: #B4BFE0;
+  text-align: center;
 }
 
-.navbar-default .navbar-nav>li>a {
-    padding-top: 25px;
-    font-family: Open Sans;
-    color: white;
-}
-
-.navbar-default .navbar-nav>li>a:hover{
-  background: rgba(0, 0, 128, 0.25);
+#pg2Header{
+  font-size: 60px;
+  font-family: Open Sans;
+  font-weight: 700;
+  letter-spacing: 10px;
   color: white;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.50);
+  padding-bottom: 4%;
+}
+
+.tagImage{
+  font-size: 50px;
+  color: black;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.50);
+}
+
+.tagHeading{
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 36px;
+  text-shadow: 0 2px 1px rgba(0,0,0,0.25);
+}
+
+.tagDescription{
+  font-family: Lato;
+  font-size: 24px;
+  color: black;
+}
+
+section.signUp{
+  width: 100%;
+  max-height: 50%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background: #272727;
+  text-align: center;
+}
+
+#signUpHeader{
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 60px;
+  letter-spacing: 7px;
+  color: white;
+  text-shadow: 0px 2px 4px #E5A600;
+}
+
+label{
+  font-family: Lato;
+}
+
+form input{
+  margin-left: 0.25em;
+  margin-right: 0.75em;
+}
+
+.form-control{
+  background-color: #adadad;
+  border: 2px solid orange;
+  font-family: Lato;
+  color: white;
+}
+
+input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #e8e8e8 !important;
+    font-family: Lato !important;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #e8e8e8 !important;
+   font-family: Lato !important;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #e8e8e8 !important;
+   font-family: Lato !important;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #e8e8e8 !important;
+   font-family: Lato !important;
+}
+input::-ms-input-placeholder { /* Microsoft Edge */
+   color: #e8e8e8 !important;
+   font-family: Lato !important;
+}
+
+.signUpSubtext{
+  font-family: Lato;
+  font-size: 36px;
+  letter-spacing: 7px;
+  color: white;
+}
+
+.signUpButton:hover{
+  background-color: orange;
+  border: 2px solid orange;
+  color: black;
+}
+
+.signUpButton:active {
+  transform: translateY(6px);
+}
+
+.signUpButton{
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  background: transparent;
+  color: white;
+  border: 2px solid orange;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 2px;
+  font-family: Lato;
+}
+
+.endBar{
+  background: #330066;
+  padding: 15px;
+  text-align: center;
+}
+
+.copyrightText{
+  font-family: Lato;
+  padding: 5%;
+}
+
+.socialLink{
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+@media screen and (max-width: 480px){
+  #headerCompanyName{
+    font-size: 60px;
+    letter-spacing: 15px;
+  }
+
+  #headerSubtext{
+    font-size: 24px;
+  }
+
+  .signUpSubtext{
+    font-size: 28px;
+  }
+
+  .endBar{
+    padding: 10px;
+  }
 }
