@@ -2,7 +2,7 @@ const express = require('express');
 const hbs = require('hbs');
 var bodyParser = require('body-parser');
 
-var index = require('/routes/index.js');
+var index = require('./routes/index');
 
 var app = express();
 const port = process.env.PORT || 3000;
