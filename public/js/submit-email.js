@@ -41,7 +41,7 @@ function addEmail(e) {
   console.log(newEmail);
 
   //Use AJAX to post
-  $.ajax({
+  /*$.ajax({
     type: 'POST',
     data: mailOptions,
     dataType: 'json',
@@ -51,7 +51,7 @@ function addEmail(e) {
     },
     //url: "http://localhost:3000/submitemail" *USE WHEN RUNNING LOCALLY*
     url: "https://mighty-wildwood-97708/submitemail"
-  });
+  });*/
 
   var form = document.getElementById("submitForm");
   form.reset();
