@@ -45,7 +45,7 @@ function addEmail(e) {
     type: 'POST',
     data: mailOptions,
     dataType: 'json',
-    ContentType: 'application/x-www-form-urlencoded',
+    ContentType: 'application/json',
     success: () => {
       console.log('it worked!');
     },
