@@ -49,7 +49,7 @@ function addEmail(e) {
     success: () => {
       console.log('it worked!');
     },
-    //url: "http://localhost:3000/submitemail" *USE WHEN RUNNING LOCALLY*
+    //url: "http://localhost:3000/submitemail" //use when running locally
     url: "https://mighty-wildwood-97708/submitemail"
   });
 
