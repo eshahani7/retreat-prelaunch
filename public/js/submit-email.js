@@ -50,7 +50,7 @@ function addEmail(e) {
       console.log('it worked!');
     },
     //url: "http://localhost:3000/submitemail" //use when running locally
-    url: "https://mighty-wildwood-97708/submitemail"
+    url: "https://mighty-wildwood-97708.herokuapp.com/submitemail"
   });
 
   var form = document.getElementById("submitForm");
