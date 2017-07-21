@@ -1,280 +1,294 @@
-body  {
-  font-size: 15px;
-  color: white;
+body {
+    font-size: 15px;
+    color: white;
 }
 
-html{
-  height: 100%;
+html {
+    height: 100%;
 }
 
 .flippedImg {
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: "FlipH";
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
 }
 
 a:visited {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
+
 a:hover {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
+
 a:active {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
-section.header{
-  padding-top: 2%;
-  padding-bottom: 2%;
-  width: 100%;
-  max-height: 50%;
-  background-image: url("../img/beachResort.jpg");
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  color: white;
+section.header {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+    max-height: 50%;
+    background-image: url("../img/beachResort.jpg");
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
 }
 
-#headerCompanyName{
-  font-size: 72px;
-  letter-spacing: 30px;
-  padding-top: 10%;
-  font-family: Montserrat;
-  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-                0px 8px 13px rgba(0,0,0,0.1),
-                0px 18px 23px rgba(0,0,0,0.1);
-  color: white;
+#headerCompanyName {
+    font-size: 72px;
+    letter-spacing: 30px;
+    padding-top: 10%;
+    font-family: Montserrat;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+    color: white;
 }
 
-#headerSubtext{
-  font-size: 32px;
-  font-family: Open Sans;
-  font-weight: 300;
-  text-align: center;
-  color: white;
+#headerSubtext {
+    font-size: 32px;
+    font-family: Open Sans;
+    font-weight: 300;
+    text-align: center;
+    color: white;
 }
 
-#headerHelper{
-  padding-top: 5%;
-  font-size: 20px;
-  font-family: Open Sans;
-  color: white;
-  letter-spacing: 2px;
-  text-align: left;
-  /*font-weight: 700;*/
+#headerHelper {
+    padding-top: 5%;
+    font-size: 20px;
+    font-family: Open Sans;
+    color: white;
+    letter-spacing: 2px;
+    text-align: left;
+    /*font-weight: 700;*/
 }
 
-#Buttons{
-  text-align: center;
-  position: relative;
-
-  margin-top: 10%;
+#Buttons {
+    text-align: center;
+    position: relative;
+    margin-top: 10%;
 }
 
-#arrow{
-  padding-top: 8px;
-  padding-bottom: 3px;
+#arrow {
+    padding-top: 8px;
+    padding-bottom: 3px;
 }
 
-.typewrite{
-  color: white;
+.typewrite {
+    color: white;
 }
 
-.round-transparent-button:hover{
-  background-color: white;
-  border: 2px solid white;
-  color: black;
+.round-transparent-button:hover {
+    background-color: white;
+    border: 2px solid white;
+    color: black;
 }
 
 .round-transparent-button:active {
-  transform: translateY(4px);
+    transform: translateY(4px);
 }
 
-.round-transparent-button{
-  border-radius: 50px;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  background: transparent;
-  padding: 20px;
-  padding-left: 35px;
-  padding-right: 35px;
-  color: white;
-  border: 2px solid white;
-
-  font-family: Lato;
-  /*font-size: 16px;*/
+.round-transparent-button {
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    background: transparent;
+    padding: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    color: white;
+    border: 2px solid white;
+    font-family: Lato;
+    /*font-size: 16px;*/
 }
 
-section.info{
-  width: 100%;
-  max-height: 50%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  background: #B4BFE0;
-  text-align: center;
+section.info {
+    width: 100%;
+    max-height: 50%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background: ;
+    text-align: center;
 }
 
-#pg2Header{
-  font-size: 48px;
-  font-family: Open Sans;
-  font-weight: 700;
-  letter-spacing: 10px;
-  color: white;
-  text-shadow: 0 2px 5px rgba(0,0,0,0.50);
-  padding-bottom: 4%;
+#pg2Header {
+    font-size: 48px;
+    font-family: "futura-pt";
+    font-weight: 700;
+    color: #0b1321;
+    padding-top: 5%;
 }
 
-.tagImage{
-  font-size: 50px;
-  color: black;
-  text-shadow: 0 2px 5px rgba(0,0,0,0.50);
+.tagImage {
+    font-size: 50px;
+    color: black;
 }
 
-.tagHeading{
-  font-family: Open Sans;
-  font-weight: 600;
-  font-size: 36px;
-  text-shadow: 0 2px 1px rgba(0,0,0,0.25);
+.tagHeading {
+    font-family: "futura-pt";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    color: #0b1321;
 }
 
-.tagDescription{
-  font-family: Lato;
-  font-size: 24px;
-  color: black;
+.headerdescrip {
+    font-family: "futura-pt";
+    font-size: 21px;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+    line-height: 67px;
+    padding-bottom: 2%;
 }
 
-section.signUp{
-  width: 100%;
-  max-height: 50%;
-  padding-top: 2%;
-  padding-bottom: 3%;
-  background: #272727;
-  text-align: center;
+.tagDescription {
+    font-family: "futura-pt";
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+    line-height: 67px;
+    padding-bottom: 23%;
 }
 
-#signUpHeader{
-  font-family: Open Sans;
-  font-weight: 700;
-  font-size: 48px;
-  letter-spacing: 7px;
-  color: white;
-  text-shadow: 0px 2px 4px #E5A600;
+section.signUp {
+    width: 100%;
+    max-height: 50%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    background: #272727;
+    text-align: center;
 }
 
-label{
-  font-family: Lato;
+#signUpHeader {
+    font-family: "futura-pt";
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: 7px;
+    color: white;
+    padding-top: 10%;
 }
 
-form input{
-  margin-left: 0.25em;
-  margin-right: 0.75em;
+label {
+    font-family: Lato;
 }
 
-.form-control{
-  background-color: #adadad;
-  border: 2px solid orange;
-  font-family: Lato;
-  color: white;
+form input {
+    margin-left: 0.25em;
+    margin-right: 0.75em;
 }
 
-input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+.form-control {
+    background-color: #adadad;
+    border: 2px solid orange;
+    font-family: Lato;
+    color: white;
+}
+
+input::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
     color: #e8e8e8 !important;
     font-family: Lato !important;
 }
-input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color: #e8e8e8 !important;
-   font-family: Lato !important;
-}
-input::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color: #e8e8e8 !important;
-   font-family: Lato !important;
-}
-input:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color: #e8e8e8 !important;
-   font-family: Lato !important;
-}
-input::-ms-input-placeholder { /* Microsoft Edge */
-   color: #e8e8e8 !important;
-   font-family: Lato !important;
+
+input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #e8e8e8 !important;
+    font-family: Lato !important;
 }
 
-.signUpSubtext{
-  font-family: Lato;
-  font-size: 36px;
-  letter-spacing: 7px;
-  color: white;
+input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #e8e8e8 !important;
+    font-family: Lato !important;
 }
 
-.signUpButton:hover{
-  background-color: orange;
-  border: 2px solid orange;
-  color: black;
+input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #e8e8e8 !important;
+    font-family: Lato !important;
+}
+
+input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #e8e8e8 !important;
+    font-family: Lato !important;
+}
+
+.signUpSubtext {
+    font-family: Lato;
+    font-size: 36px;
+    color: white;
+    padding-bottom: 5%
+}
+
+.signUpButton:hover {
+    background-color: orange;
+    border: 2px solid orange;
+    color: black;
 }
 
 .signUpButton:active {
-  transform: translateY(6px);
+    transform: translateY(6px);
 }
 
-.signUpButton{
-  border-radius: 50px;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  background: transparent;
-  color: white;
-  border: 2px solid orange;
-  padding: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin: 2px;
-  font-family: Lato;
+.signUpButton {
+    background: transparent;
+    color: white;
+    border: 2px solid orange;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 2px;
+    font-family: Lato;
+    letter-spacing: 5px;
 }
 
-.endBar{
-  background: #efefef;
-  padding: 15px;
-  text-align: center;
+.endBar {
+    background: #efefef;
+    padding: 15px;
+    text-align: center;
 }
 
-#copyrightText{
-  font-family: Lato;
-  color: #E5A600;
-  padding-top: 0.5%;
-  font-size: 16px;
+#copyrightText {
+    font-family: Lato;
+    color: #E5A600;
+    padding-top: 0.5%;
+    font-size: 16px;
 }
 
-.socialLink{
-  margin-left: 1%;
-  margin-right: 1%;
+.socialLink {
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .logo {
-  width: 27px;
-  height: 32px
+    width: 73px;
+    height: 46px;
 }
 
-@media screen and (max-width: 480px){
-  #headerCompanyName{
-    font-size: 60px;
-    letter-spacing: 15px;
-    text-align: center;
-  }
-
-  #headerSubtext{
-    font-size: 24px;
-  }
-
-  .signUpSubtext{
-    font-size: 28px;
-  }
-
-  .endBar{
-    padding: 10px;
-  }
+@media screen and (max-width: 480px) {
+    #headerCompanyName {
+        font-size: 60px;
+        letter-spacing: 15px;
+        text-align: center;
+    }
+    #headerSubtext {
+        font-size: 24px;
+    }
+    .signUpSubtext {
+        font-size: 28px;
+    }
+    .endBar {
+        padding: 10px;
+    }
 }
