@@ -307,7 +307,7 @@ input::-ms-input-placeholder {
     height: 36.25px;
 }
 
-@media screen and (max-width: 535px) {
+@media screen and (max-width: 650px) {
     #headerCompanyName {
         font-size: 70px;
         letter-spacing: 25px;
