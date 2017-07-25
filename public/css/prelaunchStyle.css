@@ -328,6 +328,23 @@ input::-ms-input-placeholder {
         letter-spacing: 25px;
         text-align: center;
     }
+
+    .logo {
+        width: 56.25px;
+        height: 36.25px;
+    }
+
+    #copyrightText {
+        font-family: Lato;
+        color: #E5A600;
+        padding-top: 2%;
+        font-size: 12px;
+    }
+
+    .socialLink {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
 }
 
 @media screen and (max-width: 500px) {
