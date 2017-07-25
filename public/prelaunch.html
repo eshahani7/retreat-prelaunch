@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>R E T R E A T</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/prelaunchStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:700|Open+Sans:300,600,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Icon (try new ones)-->
+    <link rel="icon" href="img/travelIcon4.png">
+
+    <script type="text/javascript" src="js/typewriterAnimation.js">
+    </script>
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <section class="header">
+      <div class="container">
+        <div id="headerContent">
+          <div class="row">
+            <div class="col-lg-12">
+              <img src="img/Logo.png">
+            </div>
+            <div class="col-sm-12">
+              <h1 id="headerCompanyName">RETREAT</h1>
+              <div class="clearfix visible-xs-block"></div>
+            </div>
+          </div> <!-- row -->
+          <div class="row">
+            <div class="col-md-6 col-sm-8 col-xs-12">
+              <div>
+                <h3 id="headerSubtext">
+                  We help you live
+                  <a href="" class="typewrite" data-period="2000" data-type='[ "comfortably.", "boldly.", "luxuriously.", "effectively." ]'>
+                    <span class="wrap"></span>
+                  </a>
+                </h3>
+              </div> <!-- headerSubtext -->
+            </div> <!-- col-md -->
+          </div> <!-- row -->
+          <div class="row">
+            <div class="col-lg-6 col-sm-8 col-xs-12">
+              <h3 id="headerHelper">Upgrade your excursions by using our platform to split and share the costs of your dream vacation!</h3>
+            </div>
+          </div> <!-- row -->
+          <div id="Buttons">
+            <div class="row">
+              <div class="col-lg-12">
+                <input type="button" class="round-transparent-button" value="LET'S GET STARTED!" onClick="document.getElementById('middle').scrollIntoView();" />
+              </div>
+              <div class="col-lg-12" id="arrow">
+                <a href="#middle"><img src="img/LittleArrow.png"></a>
+              </div>
+            </div>
+          </div> <!-- Butoons -->
+        </div> <!--headerContent -->
+      </div> <!-- Container -->
+    </section> <!-- Section: header -->
+
+    <!-- MIDDLE -->
+    <section class="info" id="middle">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 id="pg2Header">Booking made better.</h1>
+          </div>
+          <div class="col-lg-12">
+            <img src="img/blackinf.png" class="imgDivider">
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <i class="fa fa-users tagImage" aria-hidden="true" style="font-size: 60px"></i>
+            <h3 class="tagHeading">Group Up</h3>
+            <p class="tagDescription">Pick a place and gather your friends - or join other adventurous souls like yourself.</p>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <i class="fa fa-credit-card tagImage" aria-hidden="true" style="font-size: 60px"></i>
+            <h3 class="tagHeading">Pitch In</h3>
+            <p class="tagDescription">Everyone contributes to a shared pot, and the location is booked hassle free.</p>
+          </div>
+          <div class="col-md-4 col-md-12">
+            <i class="fa fa-building tagImage" aria-hidden="true" style="font-size: 60px"></i>
+            <h3 class="tagHeading">Live Large</h3>
+            <p class="tagDescription">Stay at high end locations, and save hundred doing it!</p>
+          </div>
+        </div> <!-- row -->
+      </div> <!-- Container -->
+    </section> <!-- Section: Info -->
+
+    <!-- SIGN UP -->
+    <section class ="signUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 id="signUpHeader">Join the Beta Club</h1>
+          </div>
+          <div class="col-lg-12">
+            <h3 class="signUpSubtext">No spam and sweet perks - no spam. Promise.</h3>
+          </div>
+          <div class="col-lg-12">
+            <img src="img/goldinf.png" class="imgDivider">
+          </div>
+          <div class="col-lg-12">
+            <!-- Replace with real ID's -->
+            <form action="/submitemail" method="POST" class="form-inline">
+              <div class="form-group">
+                <label for="exampleInputName">Name</label>
+                <input type="text" class="form-control" name="name" id="exampleInputName" placeholder="Jane Doe">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail">E-mail</label>
+                <input type="email" class="form-control" name="email" id="exampleInputEmail" placeholder="jane.doe@example.com">
+              </div>
+              <button type="submit" class="btn btn-default signUpButton">Sign Up</button>
+            </form>
+
+          </div>
+        </div> <!-- row -->
+      </div> <!-- Container -->
+    </section> <!-- Section: SignUp -->
+
+    <!-- END BAR -->
+    <div class="endBar">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="#"><img src="img/Logo.png" align="left" class="logo"></a>
+          </div>
+          <div class="col-sm-6">
+            <a href="#"><img src="img/insta.png" class="socialLink"></a>
+            <a href="#"><img src="img/twitter.png" class="socialLink"></a>
+            <a href="#"><img src="img/facebook.png" class="socialLink"></a>
+          </div>
+          <div class="col-sm-3" align="right" valign="center" id=copyrightText>
+            © Retreat 2017
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script   src="https://code.jquery.com/jquery-3.2.1.js"   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="   crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </body>
+</html>
