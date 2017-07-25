@@ -76,7 +76,7 @@ section.header {
 }
 
 #headerCompanyName {
-    font-size: 70px;
+    font-size: 72px;
     letter-spacing: 30px;
     padding-top: 10%;
     font-family: Montserrat;
@@ -330,4 +330,34 @@ input::-ms-input-placeholder {
     .endBar {
         padding: 10px;
     }
+}
+
+@media screen and (max-width: 375px){
+  #headerCompanyName {
+      font-size: 55px;
+      letter-spacing: 15px;
+      text-align: center;
+  }
+  #headerSubtext {
+      font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 360px){
+  #headerCompanyName {
+      font-size: 52px;
+      letter-spacing: 15px;
+      text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px){
+  #headerCompanyName {
+      font-size: 48px;
+      letter-spacing: 12px;
+      text-align: center;
+  }
+  #headerSubtext {
+      font-size: 18px;
+  }
 }
