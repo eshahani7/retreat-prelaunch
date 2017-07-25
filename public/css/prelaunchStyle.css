@@ -307,6 +307,21 @@ input::-ms-input-placeholder {
     height: 36.25px;
 }
 
+@media screen and (max-width: 767px){
+  .navbar-default .navbar-nav>li>a{
+    color: black;
+    background-color: white;
+  }
+  .navbar-default .navbar-nav>li>a:hover{
+    color: black;
+    background-color: lightgray;
+  }
+  .navbar-default .navbar-nav>li>a:visited{
+    color: black;
+    background-color: lightgray;
+  }
+}
+
 @media screen and (max-width: 650px) {
     #headerCompanyName {
         font-size: 70px;
